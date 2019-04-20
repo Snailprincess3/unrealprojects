@@ -695,3 +695,71 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.04.20-08.12.47:854][381]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
 [2019.04.20-08.12.47:976][381]LogSavePackage: Moving '../../../../../unrealprojects/unrealprojects/FlightGame/Saved/TwinStickExampleMap9653D9AC4288BCAFF95D569B19B867A2.tmp' to '../../../../../unrealprojects/unrealprojects/FlightGame/Content/TwinStickBP/Maps/TwinStickExampleMap.umap'
 [2019.04.20-08.12.48:158][381]LogSavePackage: Moving '../../../../../unrealprojects/unrealprojects/FlightGame/Saved/TwinStickExampleMap_BuiltData34395D6B46985330860A3382EE894853.tmp' to '../../../../../unrealprojects/unrealprojects/FlightGame/Content/TwinStickBP/Maps/TwinStickExampleMap_BuiltData.uasset'
+[2019.04.20-08.14.41:476][550]LogSlate: Took 0.088805 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.04.20-08.16.11:964][689]Running C:/Users/Dustin/Documents/GitHub/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/Dustin/Documents/unrealprojects/unrealprojects/FlightGame/FlightGame.uproject" -game -engine -progress
+[2019.04.20-08.16.13:421][689]Discovering modules, targets and source code for project...
+[2019.04.20-08.16.20:972][689]Binding IntelliSense data...
+[2019.04.20-08.16.23:839][689]Binding IntelliSense data... 100%
+[2019.04.20-08.16.23:839][689]Writing project files...
+[2019.04.20-08.16.25:491][689]Writing project files... 100%
+[2019.04.20-08.16.25:720][689]LogHotReload: Recompiling module FlightGame...
+[2019.04.20-08.16.25:786][689]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2019.04.20-08.16.25:789][689]Candidate modules for hot reload:
+[2019.04.20-08.16.25:789][689]  FlightGame
+[2019.04.20-08.16.25:789][689]Building UnrealBuildTool...
+[2019.04.20-08.16.25:789][689]Building UnrealBuildTool in C:/Users/Dustin/Documents/GitHub/UnrealEngine/...
+[2019.04.20-08.16.26:235][689]Running: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\MSBuild.exe /nologo /verbosity:quiet "C:/Users/Dustin/Documents/GitHub/UnrealEngine/Engine/Source/Programs/UnrealBuildTool/UnrealBuildTool.csproj" /property:Configuration=Development /property:Platform=AnyCPU
+[2019.04.20-08.16.29:320][689]Launching UnrealBuildTool... [C:/Users/Dustin/Documents/GitHub/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FlightGame,5714 Win64 Development -TargetType=Editor -Project="C:/Users/Dustin/Documents/unrealprojects/unrealprojects/FlightGame/FlightGame.uproject" "C:/Users/Dustin/Documents/unrealprojects/unrealprojects/FlightGame/FlightGame.uproject"  -IgnoreJunk]
+[2019.04.20-08.16.59:553][689]Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Dustin\Documents\GitHub\UnrealEngine).
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Dustin\Documents\unrealprojects\unrealprojects).
+Creating makefile for FlightGameEditor (no existing makefile)
+Creating makefile for UnrealHeaderTool (no existing makefile)
+Parsing headers for FlightGameEditor
+  Running UnrealHeaderTool "C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\FlightGame.uproject" "C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\FlightGameEditor\Development\FlightGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+Reflection code generated for FlightGameEditor in 12.6703706 seconds
+Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Building 7 actions with 8 processes...
+  [1/7] FlightGame.cpp
+  [2/7] FlightGame.init.gen.cpp
+  [3/7] FlyingPawn.cpp
+  [4/7] FlyingPawn.gen.cpp
+  [5/7] UE4Editor-FlightGame-5714.lib
+     Creating library C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.lib and object C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.exp
+  [6/7] UE4Editor-FlightGame-5714.dll
+     Creating library C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.suppressed.lib and object C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.suppressed.exp
+  [7/7] FlightGameEditor.target
+Total time in Parallel executor: 9.86 seconds
+Total execution time: 29.94 seconds
+
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: New page: Compilation - Apr 19, 2019, 6:16:59 PM
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Dustin\Documents\GitHub\UnrealEngine).
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Dustin\Documents\unrealprojects\unrealprojects).
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Creating makefile for FlightGameEditor (no existing makefile)
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Creating makefile for UnrealHeaderTool (no existing makefile)
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Parsing headers for FlightGameEditor
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\FlightGame.uproject" "C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\FlightGameEditor\Development\FlightGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Reflection code generated for FlightGameEditor in 12.6703706 seconds
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Building 7 actions with 8 processes...
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [1/7] FlightGame.cpp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [2/7] FlightGame.init.gen.cpp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [3/7] FlyingPawn.cpp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [4/7] FlyingPawn.gen.cpp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [5/7] UE4Editor-FlightGame-5714.lib
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:      Creating library C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.lib and object C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.exp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [6/7] UE4Editor-FlightGame-5714.dll
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:      Creating library C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.suppressed.lib and object C:\Users\Dustin\Documents\unrealprojects\unrealprojects\FlightGame\Intermediate\Build\Win64\UE4Editor\Development\FlightGame\UE4Editor-FlightGame-5714.suppressed.exp
+[2019.04.20-08.16.59:553][689]CompilerResultsLog:   [7/7] FlightGameEditor.target
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Total time in Parallel executor: 9.86 seconds
+[2019.04.20-08.16.59:553][689]CompilerResultsLog: Total execution time: 29.94 seconds
+[2019.04.20-08.16.59:553][689]LogMainFrame: MainFrame: Module compiling took 33.768 seconds
+[2019.04.20-08.16.59:553][689]Reloading module FlightGame after successful compile.
+[2019.04.20-08.16.59:651][689]LogClass: Could not find existing package /Script/FlightGame for HotReload of class FlyingPawn, assuming a new package.
+[2019.04.20-08.16.59:655][689]LogContentBrowser: Native class hierarchy updated for 'FlightGame' in 0.0019 seconds. Added 1 classes and 2 folders.
+[2019.04.20-08.16.59:679][689]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2019.04.20-08.16.59:692][689]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2733 classes and 661 folders.
+[2019.04.20-08.17.00:435][689]LogSlate: Window 'Add C++ Class' being destroyed
+[2019.04.20-08.17.22:550][811]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2019.04.20-08.17.22:789][812]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2019.04.20-08.17.22:976][813]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2019.04.20-08.18.53:715][945]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (43.795 sec). This should never happen. Something is wrong with the timer delegate!

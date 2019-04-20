@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\CrashReportClient.Target.cs" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{60590653-35E6-458F-8276-D64FB4012C74}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Programs\CrashReportClient\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\CrashReportClient.Build.cs" />
+    <Filter Include="Private">
+      <UniqueIdentifier>{28B202B0-867C-4FB5-8920-51626D734BE3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashDescription.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashDescription.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportAnalytics.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportAnalytics.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClient.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClient.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientApp.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientConfig.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientConfig.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientStyle.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientStyle.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientUnattended.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportClientUnattended.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashReportUtil.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashUpload.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\CrashUpload.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\GenericErrorReport.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\GenericErrorReport.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\MainLoopTiming.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\MainLoopTiming.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\PendingReports.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\PendingReports.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\PlatformErrorReport.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\SCrashReportClient.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\SCrashReportClient.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <Filter Include="Private\Linux">
+      <UniqueIdentifier>{0DE82F51-BA5A-45ED-BB65-835DF11530F9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Linux\CrashReportClientMainLinux.cpp">
+      <Filter>Private\Linux</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Linux\LinuxErrorReport.h">
+      <Filter>Private\Linux</Filter>
+    </ClInclude>
+    <Filter Include="Private\Mac">
+      <UniqueIdentifier>{EAC368AF-7F49-48A2-ADBE-2DF28DB71AC5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Mac\CrashReportClientMainMac.cpp">
+      <Filter>Private\Mac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Mac\MacErrorReport.cpp">
+      <Filter>Private\Mac</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Mac\MacErrorReport.h">
+      <Filter>Private\Mac</Filter>
+    </ClInclude>
+    <Filter Include="Private\Windows">
+      <UniqueIdentifier>{A885D966-9844-4BB6-9D02-4D4B540FAC74}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Windows\CrashReportClientMainWindows.cpp">
+      <Filter>Private\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Windows\WindowsErrorReport.cpp">
+      <Filter>Private\Windows</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Private\Windows\WindowsErrorReport.h">
+      <Filter>Private\Windows</Filter>
+    </ClInclude>
+    <Filter Include="Public">
+      <UniqueIdentifier>{DAE3AE50-3369-4382-B065-646C48C018F6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Public\CrashReportClientApp.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{AF56C0A0-7370-4E73-88EF-9A232211F126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Mac">
+      <UniqueIdentifier>{6602D03A-3FDE-47EC-B6BE-A8A556B6AA99}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\CrashReportClient\Resources\Mac\Info.plist">
+      <Filter>Resources\Mac</Filter>
+    </None>
+  </ItemGroup>
+</Project>

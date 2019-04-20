@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FlightGame.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{E820F6BF-3B2A-4D55-B68B-3DFD7A756829}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FlightGame.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FlightGameEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0F2EDDE3-59C9-48C1-B63C-699D90D58C92}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FlightGame">
+      <UniqueIdentifier>{08337AB0-C2FA-470A-8816-5243EF32A206}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FlightGame\FlightGame.Build.cs">
+      <Filter>Source\FlightGame</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FlightGame\FlightGame.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FlightGame\FlightGame.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FlightGame\FlyingPawn.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FlightGame\FlyingPawn.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
