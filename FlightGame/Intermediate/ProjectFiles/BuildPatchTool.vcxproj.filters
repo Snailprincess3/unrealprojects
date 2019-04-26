@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\BuildPatchTool.Target.cs" />
     <Filter Include="Config">
-      <UniqueIdentifier>{F8FE0178-3B1B-43C4-BB4C-095F1FA43D2B}</UniqueIdentifier>
+      <UniqueIdentifier>{446BF985-8FDD-46F4-A8C0-B2FD192EFF2F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Programs\BuildPatchTool\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
@@ -11,7 +11,7 @@
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\BuildPatchTool.Automation.cs" />
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\BuildPatchTool.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{5F46A003-8AFF-4F9D-9B1E-B77D6C61A8FD}</UniqueIdentifier>
+      <UniqueIdentifier>{E9331689-8702-42A6-9171-E5BA797DBA44}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\Private\BuildPatchTool.cpp">
       <Filter>Private</Filter>
@@ -20,7 +20,7 @@
       <Filter>Private</Filter>
     </ClCompile>
     <Filter Include="Private\ToolModes">
-      <UniqueIdentifier>{D1D27EF0-1904-4540-8E96-13D07AF185C9}</UniqueIdentifier>
+      <UniqueIdentifier>{41640DDD-AA90-4CAB-85F7-2B330869D3AE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\Private\ToolModes\AutomationMode.cpp">
       <Filter>Private\ToolModes</Filter>
@@ -50,19 +50,19 @@
       <Filter>Private\ToolModes</Filter>
     </ClCompile>
     <Filter Include="Public">
-      <UniqueIdentifier>{D3D89749-9621-4302-B06F-478C0C35B1F7}</UniqueIdentifier>
+      <UniqueIdentifier>{8B18527B-0E68-473D-8142-A835696D4FE1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\Public\BuildPatchTool.h">
       <Filter>Public</Filter>
     </ClInclude>
     <Filter Include="Public\Interfaces">
-      <UniqueIdentifier>{6E16887D-DC8A-4DE3-8E90-147D73C191E4}</UniqueIdentifier>
+      <UniqueIdentifier>{BCEC90AE-51BF-450B-937C-07248E4C4C20}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\Public\Interfaces\ToolMode.h">
       <Filter>Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Public\ToolModes">
-      <UniqueIdentifier>{98247671-AFAE-4A51-A7EA-47B8DBCF008B}</UniqueIdentifier>
+      <UniqueIdentifier>{015D80E4-D092-4EDB-95DE-89F97D42FFD6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\BuildPatchTool\Public\ToolModes\AutomationMode.h">
       <Filter>Public\ToolModes</Filter>

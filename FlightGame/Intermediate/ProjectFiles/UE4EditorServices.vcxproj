@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4D3C3D73-8BAA-44C9-AD25-7B1FC8ACC9AB}</ProjectGuid>
+    <ProjectGuid>{314BF892-96CD-4FA5-BD52-2AEF78D667FE}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>UE4EditorServices</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

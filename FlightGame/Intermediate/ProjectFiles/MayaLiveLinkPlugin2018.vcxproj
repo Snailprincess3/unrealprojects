@@ -91,7 +91,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{54841AD3-DB77-4F75-AFD4-7F4AEB4624CE}</ProjectGuid>
+    <ProjectGuid>{DE79375E-97BA-41EA-A92E-07D038D2E249}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>MayaLiveLinkPlugin2018</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

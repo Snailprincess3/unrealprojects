@@ -2,6 +2,7 @@
 
 
 #include "FlyingPawn.h"
+#include "FlyingPawnMovementComponent.h"
 
 // Sets default values
 AFlyingPawn::AFlyingPawn()
@@ -9,6 +10,8 @@ AFlyingPawn::AFlyingPawn()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	FlightMovementComponent = CreateDefaultSubobject<UFlyingPawnMovementComponent>(TEXT("CustomMovementComponent"));
+	FlightMovementComponent->UpdatedComponent = RootComponent;
 }
 
 // Called when the game starts or when spawned
@@ -30,5 +33,15 @@ void AFlyingPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+UPawnMovementComponent* AFlyingPawn::GetMovementComponent() const
+{
+	return FlightMovementComponent;
+}
+
+UFlyingPawnMovementComponent* AFlyingPawn::GetFlyingMovementComponent() const
+{
+	return FlightMovementComponent;
 }
 

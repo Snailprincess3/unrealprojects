@@ -4,7 +4,7 @@
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\LiveCodingConsole\LiveCodingConsole.Target.cs" />
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\LiveCodingConsole\LiveCodingConsole.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{1814F8D2-E621-45FC-936A-5ED9615F75DF}</UniqueIdentifier>
+      <UniqueIdentifier>{54769247-F41E-416E-AAF7-77BA3A18BA19}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\LiveCodingConsole\Private\LiveCodingConsole.cpp">
       <Filter>Private</Filter>

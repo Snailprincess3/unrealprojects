@@ -91,7 +91,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B0B656BF-F8C7-40DA-8289-6B0905E77E45}</ProjectGuid>
+    <ProjectGuid>{69C5BDE2-E16D-49A2-9A9C-14DD97A102A7}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>MinidumpDiagnostics</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

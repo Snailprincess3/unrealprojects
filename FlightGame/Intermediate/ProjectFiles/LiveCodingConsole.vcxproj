@@ -91,7 +91,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B160AD55-ABBA-4708-B546-605F35850CF0}</ProjectGuid>
+    <ProjectGuid>{61FF217B-7B55-4CF0-8CD3-FBD3C566AC19}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>LiveCodingConsole</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

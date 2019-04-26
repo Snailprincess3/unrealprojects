@@ -6,7 +6,7 @@
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\PixelStreaming\WebRTCProxy\WebRTCProxy.Build.cs" />
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\PixelStreaming\WebRTCProxy\_clang-format" />
     <Filter Include="bin">
-      <UniqueIdentifier>{B4072BAE-7351-403F-B3F1-355F8213C11A}</UniqueIdentifier>
+      <UniqueIdentifier>{589850A8-2F43-4B47-865E-C0A9DA9BD0E0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\PixelStreaming\WebRTCProxy\bin\Start_AWS_WebRTCProxy.bat">
       <Filter>bin</Filter>
@@ -21,7 +21,7 @@
       <Filter>bin</Filter>
     </None>
     <Filter Include="src">
-      <UniqueIdentifier>{5DC3B5E4-B6DB-4210-A929-41F251517FB0}</UniqueIdentifier>
+      <UniqueIdentifier>{83CBD29C-4939-41D7-A147-59C2D38F01E6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\..\..\..\GitHub\UnrealEngine\Engine\Source\Programs\PixelStreaming\WebRTCProxy\src\AsyncConnection.cpp">
       <Filter>src</Filter>

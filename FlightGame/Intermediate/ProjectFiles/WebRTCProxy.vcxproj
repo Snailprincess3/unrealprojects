@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{44DB6925-E36F-401D-862F-EB3B435879BE}</ProjectGuid>
+    <ProjectGuid>{5FEE10BB-9C6F-444B-81D3-9FADF25977B4}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>WebRTCProxy</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>
