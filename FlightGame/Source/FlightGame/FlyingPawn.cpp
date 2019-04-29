@@ -12,6 +12,8 @@ AFlyingPawn::AFlyingPawn()
 
 	FlightMovementComponent = CreateDefaultSubobject<UFlyingPawnMovementComponent>(TEXT("CustomMovementComponent"));
 	FlightMovementComponent->UpdatedComponent = RootComponent;
+	FlightMovementComponent->bEditableWhenInherited = true;
+	FlightMovementComponent->Initialize();
 }
 
 // Called when the game starts or when spawned
