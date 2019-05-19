@@ -64,6 +64,9 @@
     <ClInclude Include="..\..\Source\FlightGame\BaseFlyingMovementComponent.h">
       <Filter>Source\FlightGame</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\FlightGame\FlyingAIController.cpp">
@@ -73,6 +76,9 @@
       <Filter>Source\FlightGame</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FlightGame\BaseFlyingMovementComponent.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.cpp">
       <Filter>Source\FlightGame</Filter>
     </ClCompile>
   </ItemGroup>

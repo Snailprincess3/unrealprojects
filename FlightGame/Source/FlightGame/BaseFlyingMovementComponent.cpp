@@ -22,7 +22,7 @@ void UBaseFlyingMovementComponent::TickComponent(float DeltaTime, enum ELevelTic
 	FVector DesiredMoveDirection = ConsumeInputVector();
 
 	if (DesiredMoveDirection.IsNearlyZero()) {
-		Velocity = Velocity * FMath::Pow(0.95, DeltaTime / 0.015);
+		Velocity = Velocity * FMath::Pow(0.99, DeltaTime / 0.015);
 		if (Velocity.IsNearlyZero()) {
 			currentRotation = UpdatedComponent->GetComponentRotation();
 		}
@@ -99,4 +99,5 @@ void UBaseFlyingMovementComponent::RequestDirectMove(const FVector& MoveVelocity
 }
 
 void UBaseFlyingMovementComponent::StopMovementKeepPathing() {
+	Velocity.Z = 0;
 }

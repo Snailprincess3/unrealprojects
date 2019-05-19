@@ -1171,8 +1171,10 @@
     <ClInclude Include="..\..\Source\FlightGame\BaseFlyingMovementComponent.h" />
     <ClInclude Include="..\..\Source\FlightGame\FlightGame.h" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingAIController.cpp" />
+    <ClCompile Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.cpp" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingPawn.cpp" />
     <ClInclude Include="..\..\Source\FlightGame\FlyingAIController.h" />
+    <ClInclude Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.h" />
     <ClInclude Include="..\..\Source\FlightGame\FlyingPawn.h" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingPawnBase.cpp" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingPawnMovementComponent.cpp" />

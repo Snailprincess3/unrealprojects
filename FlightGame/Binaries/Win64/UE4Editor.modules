@@ -2,6 +2,6 @@
 	"BuildId": "b3b42495-ba73-43e0-b952-4dbeee29f305",
 	"Modules": 
 	{
-		"FlightGame": "UE4Editor-FlightGame-0005.dll"
+		"FlightGame": "UE4Editor-FlightGame.dll"
 	}
 }
