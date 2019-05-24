@@ -25,6 +25,7 @@ FPathFollowingRequestResult AFlyingAIController::MoveTo(const FAIMoveRequest& Mo
 	float offset = targetZ - pathZ;
 	float startOffset = currentZ - pathZ;
 	offset = offset - startOffset;
+	UE_LOG(LogTemp, Log, TEXT("current z %d"), currentZ);
 	if (!Path.IsValid() || !Path.Get()->IsValid()) {
 		return result;
 	}

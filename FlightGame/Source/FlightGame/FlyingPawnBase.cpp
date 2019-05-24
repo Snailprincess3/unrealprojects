@@ -14,7 +14,6 @@ AFlyingPawnBase::AFlyingPawnBase()
 	FlightMovementComponent = CreateDefaultSubobject<UBaseFlyingMovementComponent>(TEXT("CustomMovementComponent"));
 	FlightMovementComponent->UpdatedComponent = RootComponent;
 	FlightMovementComponent->bEditableWhenInherited = true;
-	FlightMovementComponent->SetUseAccelerationForPathing(true);
 	FlightMovementComponent->Initialize();
 }
 
@@ -29,13 +28,6 @@ void AFlyingPawnBase::BeginPlay()
 void AFlyingPawnBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-}
-
-// Called to bind functionality to input
-void AFlyingPawnBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 
