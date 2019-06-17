@@ -1157,6 +1157,10 @@
     <NMakeOutput>..\..\Binaries\TVOS\FlightGame-TVOS-Test</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\FlightGame\FlyingPlayerController.cpp" />
+    <ClCompile Include="..\..\Source\FlightGame\InstantHitWeapon.cpp" />
+    <ClInclude Include="..\..\Source\FlightGame\FlyingPlayerController.h" />
+    <ClInclude Include="..\..\Source\FlightGame\InstantHitWeapon.h" />
     <None Include="..\..\FlightGame.uproject" />
     <None Include="..\..\Source\FlightGame.Target.cs" />
     <None Include="..\..\Source\FlightGameEditor.Target.cs" />
@@ -1167,8 +1171,10 @@
     <None Include="..\..\Config\DefaultInput.ini" />
     <None Include="..\..\Source\FlightGame\FlightGame.Build.cs" />
     <ClCompile Include="..\..\Source\FlightGame\BaseFlyingMovementComponent.cpp" />
+    <ClCompile Include="..\..\Source\FlightGame\BaseWeapon.cpp" />
     <ClCompile Include="..\..\Source\FlightGame\FlightGame.cpp" />
     <ClInclude Include="..\..\Source\FlightGame\BaseFlyingMovementComponent.h" />
+    <ClInclude Include="..\..\Source\FlightGame\BaseWeapon.h" />
     <ClInclude Include="..\..\Source\FlightGame\FlightGame.h" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingAIController.cpp" />
     <ClCompile Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.cpp" />

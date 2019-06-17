@@ -67,6 +67,15 @@
     <ClInclude Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.h">
       <Filter>Source\FlightGame</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\FlightGame\BaseWeapon.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FlightGame\InstantHitWeapon.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FlightGame\FlyingPlayerController.h">
+      <Filter>Source\FlightGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\FlightGame\FlyingAIController.cpp">
@@ -79,6 +88,15 @@
       <Filter>Source\FlightGame</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FlightGame\FlyingPathFollowingComponent.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FlightGame\BaseWeapon.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FlightGame\InstantHitWeapon.cpp">
+      <Filter>Source\FlightGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FlightGame\FlyingPlayerController.cpp">
       <Filter>Source\FlightGame</Filter>
     </ClCompile>
   </ItemGroup>

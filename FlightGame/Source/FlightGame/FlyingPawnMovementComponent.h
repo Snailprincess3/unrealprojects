@@ -79,6 +79,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 	float RollFactor;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
+	float MaxRollRate;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
+	float DriftVelocityDecay;
+
 	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Pawn|Components|PawnMovement")

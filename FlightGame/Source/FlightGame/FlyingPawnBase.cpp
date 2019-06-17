@@ -21,6 +21,8 @@ AFlyingPawnBase::AFlyingPawnBase()
 void AFlyingPawnBase::BeginPlay()
 {
 	Super::BeginPlay();
+
+	CurrentHealth = MaxHealth;
 	
 }
 
@@ -29,6 +31,21 @@ void AFlyingPawnBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+float AFlyingPawnBase::TakeDamage(float Damage, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
+{
+	float ActualDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	if (ActualDamage > 0) {
+		CurrentHealth -= ActualDamage;
+
+		if (CurrentHealth <= 0) {
+			SetLifeSpan(0.001);
+		}
+	}
+
+	return ActualDamage;
 }
 
 UPawnMovementComponent* AFlyingPawnBase::GetMovementComponent() const

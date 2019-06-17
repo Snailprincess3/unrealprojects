@@ -15,6 +15,8 @@ public:
 	// Sets default values for this pawn's properties
 	AFlyingPawnBase();
 
+	float CurrentHealth;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -23,10 +25,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, class AActor* DamageCauser) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
 	class UBaseFlyingMovementComponent* FlightMovementComponent;
 
-
 	virtual UPawnMovementComponent* GetMovementComponent() const override;
+
+	UPROPERTY(EditDefaultsOnly, Category = Stats)
+	float MaxHealth;
 };

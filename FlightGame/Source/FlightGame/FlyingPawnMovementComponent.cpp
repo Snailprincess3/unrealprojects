@@ -10,7 +10,8 @@ void UFlyingPawnMovementComponent::AddPawnYawInput(float yaw) {
 
 void UFlyingPawnMovementComponent::AddPawnPitchInput(float pitch) {
 	PitchInput += pitch;
-};
+}
+
 
 void UFlyingPawnMovementComponent::Initialize() {
 	InputVelocity.X = 0;
@@ -47,13 +48,15 @@ void UFlyingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTic
 	}
 	WasDrifting = drifting;
 
-	PitchVelocity = PitchVelocity * FMath::Pow(PitchVelocityDecay, DeltaTime / 0.015);
 	PitchVelocity += PitchInput * DeltaTime * PitchInputScale;
 	PitchVelocity = FMath::Clamp(PitchVelocity, -MaxPitchVelocity, MaxPitchVelocity);
 	
-	YawVelocity = YawVelocity * FMath::Pow(YawVelocityDecay, DeltaTime / 0.015);
 	YawVelocity += YawInput * DeltaTime * YawInputScale;
 	YawVelocity = FMath::Clamp(YawVelocity, -MaxYawVelocity, MaxYawVelocity);
+
+	float targetYaw = MaxYawVelocity * YawInput;
+	float yawDelta = YawVelocity - targetYaw;
+	YawVelocity = targetYaw + yawDelta * FMath::Pow(YawVelocityDecay, DeltaTime / 0.015);
 
 	FRotator yaw;
 	yaw.Pitch = 0;
@@ -64,8 +67,6 @@ void UFlyingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTic
 	pitch.Pitch = PitchVelocity * DeltaTime;
 	pitch.Yaw = 0;
 	pitch.Roll = 0;
-	PitchInput = 0;
-	YawInput = 0;
 
 	FRotator roll;
 	roll.Pitch = 0;
@@ -85,21 +86,30 @@ void UFlyingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTic
 		if (FMath::Abs(roll.Roll) < FMath::Abs(DriftRoll)) {
 			roll.Roll = DriftRoll;
 		}
-		DriftVelocity *= FMath::Pow(0.9, DeltaTime / 0.015);
+		DriftVelocity *= FMath::Pow(DriftVelocityDecay, DeltaTime / 0.015);
 	}
 
 
 	DriftRoll *= FMath::Pow(0.95, DeltaTime / 0.015);
 
 	FRotator currentRotation = UpdatedComponent->GetComponentRotation();
+	float oldRoll = currentRotation.Roll;
+	float delta = roll.Roll - oldRoll;
+	delta = FMath::Clamp(delta, -MaxRollRate * DeltaTime, MaxRollRate * DeltaTime);
+	roll.Roll = oldRoll + delta;
 	currentRotation.Roll = 0;
 	currentRotation += yaw;
 	currentRotation += pitch;
-	currentRotation += roll;
 
 	currentRotation.Pitch = FMath::Clamp(currentRotation.Pitch, MinPitch, MaxPitch);
-	currentRotation.Pitch *= FMath::Pow(PitchDecay, DeltaTime / 0.015);
+	if (FMath::Abs(PitchInput) < 0.5) {
+		PitchVelocity = PitchVelocity * FMath::Pow(PitchVelocityDecay, DeltaTime / 0.015);
+		currentRotation.Pitch *= FMath::Pow(PitchDecay, DeltaTime / 0.015);
+	}
+
 	FVector targetVelocity = currentRotation.RotateVector(InputVelocity);
+
+	currentRotation += roll;
 	TotalVelocity = DriftVelocity + targetVelocity;
 	float speed;
 	TotalVelocity.ToDirectionAndLength(TotalVelocity, speed);
@@ -114,14 +124,16 @@ void UFlyingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTic
 	TotalVelocity *= speed;
 
 	FVector DesiredMovementThisFrame = TotalVelocity * DeltaTime;
-	if (true) {//!DesiredMovementThisFrame.IsNearlyZero())
-		FHitResult Hit;
-		SafeMoveUpdatedComponent(DesiredMovementThisFrame, currentRotation, true, Hit);
+	FHitResult Hit;
+	SafeMoveUpdatedComponent(DesiredMovementThisFrame, currentRotation, true, Hit);
 
-		// If we bumped into something, try to slide along it
-		if (Hit.IsValidBlockingHit())
-		{
-			SlideAlongSurface(DesiredMovementThisFrame, 1.f - Hit.Time, Hit.Normal, Hit);
-		}
+	// If we bumped into something, try to slide along it
+	if (Hit.IsValidBlockingHit())
+	{
+		SlideAlongSurface(DesiredMovementThisFrame, 1.f - Hit.Time, Hit.Normal, Hit);
 	}
+
+	PitchInput = 0;
+	YawInput = 0;
+	Velocity = TotalVelocity;
 };

@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/SceneComponent.h"
 #include "FlyingPawn.generated.h"
 
 UCLASS()
@@ -19,6 +21,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void MoveForward(float val);
+
+	void MoveRight(float val);
+
+	void TiltRight(float val);
+
+	void TiltDown(float val);
+
+	void StartPrimaryFire();
+
+	void EndPrimaryFire();
+
+	class ABaseWeapon* CurrentWeapon;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -26,10 +42,20 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Gameplay)
+	USceneComponent* AimMarker;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Mesh)
+	UStaticMeshComponent* PawnMesh;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
 	class UFlyingPawnMovementComponent* FlightMovementComponent;
 
-	virtual UPawnMovementComponent* GetMovementComponent() const override;
+	UFUNCTION(BlueprintCallable, Category = "Pawn|Components|Weapon")
+	void SetCurrentWeapon(class ABaseWeapon* newWeapon);
 
-	UFlyingPawnMovementComponent* GetFlyingMovementComponent() const;
+	UFUNCTION(BlueprintCallable, Category = "Pawn|Components|Weapon")
+	class ABaseWeapon* GetCurrentWeapon();
+
+
 };
